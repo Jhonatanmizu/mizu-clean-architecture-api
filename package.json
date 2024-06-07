@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "tsx ./file.ts",
+    "build": "tsup src/",
     "test": "vitest src/",
     "test:watch": "vitest watch src/",
     "test:coverage": "vitest run --coverage src/"
@@ -20,6 +22,8 @@
     "globals": "^15.4.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.5",
+    "tsup": "^8.1.0",
+    "tsx": "^4.13.2",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.12.0",
     "vitest": "^1.6.0"
