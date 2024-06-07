@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "tsx ./file.ts",
     "build": "tsup src/",
-    "test": "vitest src/",
+    "test": "vitest run src/",
     "test:watch": "vitest watch src/",
-    "test:coverage": "vitest run --coverage src/"
+    "test:coverage": "vitest run --coverage src/",
+    "prepare": "husky",
+    "lint": "lint-staged"
   },
   "keywords": [],
   "author": "",
