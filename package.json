@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest src/",
+    "test:watch": "vitest watch src/",
+    "test:coverage": "vitest run --coverage src/"
   },
   "keywords": [],
   "author": "",
@@ -12,12 +14,14 @@
   "devDependencies": {
     "@eslint/js": "^8.56.0",
     "@types/node": "^20.14.2",
+    "@vitest/coverage-v8": "^1.6.0",
     "eslint": "^8.56.0",
     "git-commit-msg-linter": "^5.0.8",
     "globals": "^15.4.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.5",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^7.12.0"
+    "typescript-eslint": "^7.12.0",
+    "vitest": "^1.6.0"
   }
 }
