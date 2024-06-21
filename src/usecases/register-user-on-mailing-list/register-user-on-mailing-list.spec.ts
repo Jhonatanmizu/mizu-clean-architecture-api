@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { UserData } from "./user-data";
+import { UserData } from "../../entities/user-data";
 
 describe("Register user on mailing list use case", () => {
   it("should add user with complete data to mailing list", async () => {
