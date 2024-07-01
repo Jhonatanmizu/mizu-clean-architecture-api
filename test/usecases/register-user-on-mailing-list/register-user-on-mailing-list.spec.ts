@@ -1,11 +1,8 @@
-import { InMemoryUserRepository } from "./repository/in-memory-user-repository";
 import { describe, expect, it } from "vitest";
-import { UserData } from "../../entities/user-data";
-import { UserRepository } from "./ports/user-repository";
-import { RegisterUserOnMailingList } from "./register-user-on-mailing-list";
-import { left } from "../../shared/either";
-import { InvalidEmailError } from "../../entities/errors/invalid-email-error";
-import { InvalidNameError } from "../../entities/errors/invalid-name-error";
+import { UserData } from "../../../src/entities/user-data";
+import { UserRepository } from "../../../src/usecases/register-user-on-mailing-list/ports/user-repository";
+import { RegisterUserOnMailingList } from "../../../src/usecases/register-user-on-mailing-list/register-user-on-mailing-list";
+import { InMemoryUserRepository } from "./repository/in-memory-user-repository";
 
 describe("Register user on mailing list use case", () => {
   it("should add user with complete data to mailing list", async () => {

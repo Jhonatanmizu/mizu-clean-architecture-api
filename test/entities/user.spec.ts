@@ -1,8 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { left } from "../shared/either";
-import { InvalidEmailError } from "./errors/invalid-email-error";
-import { User } from "./user";
-import { InvalidNameError } from "./errors/invalid-name-error";
+import { User } from "../../src/entities/user";
 
 describe("User domain entity", () => {
   it("should not create user with invalid e-mail address", () => {
