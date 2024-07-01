@@ -48,10 +48,10 @@ describe("Register user on mailing list use case", () => {
     const usecase: RegisterUserOnMailingList = new RegisterUserOnMailingList(
       repo
     );
-    const name = "Jo";
+    const invalidName = "Jo";
     const email = "any@email.com";
     const response = await usecase.registerUserOnMailingList({
-      name,
+      name: invalidName,
       email,
     });
     const user = await repo.findUserByEmail(email);
