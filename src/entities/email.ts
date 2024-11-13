@@ -39,6 +39,6 @@ export class Email {
       return right(new Email(email));
     }
 
-    return left(new InvalidEmailError());
+    return left(new InvalidEmailError(email));
   }
 }
